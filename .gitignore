@@ -1,0 +1,31 @@
+mb.log
+mb.out
+mb.pid
+stop.out
+
+node_modules
+videos
+reports
+screenshots
+backup
+
+*.jpg
+*.png
+
+run/
+results/
+results_temp/
+output.json
+
+# IDE
+*.iml
+.idea
+
+.classpath
+.project
+.settings/
+.vscode/
+target/
+
+# OS metadata
+.DS_Store
