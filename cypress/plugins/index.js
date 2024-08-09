@@ -6,7 +6,7 @@ const oracledb = require("oracledb");
  * @type {Cypress.PluginConfig}
  */
 
-oracledb.initOracleClient({ libDir: "/Users/weerapornpaisingkhon/instantclient_19_3" }); //update to your path and delete the comment
+// oracledb.initOracleClient({ libDir: "/Users/vicky/Downloads/instantclient_19_16" }); //update to your path and delete the comment
 
 
 const queryData = async(query, dbconfig) => {

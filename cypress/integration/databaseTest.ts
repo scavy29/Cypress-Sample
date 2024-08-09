@@ -1,11 +1,12 @@
-describe("Query Oracle database", () => {
-  const SQL_NOT_ON_STORE_STATUS: string = "SELECT * FROM APPQOSSYS.books WHERE STATUS='NOT_ON_STORE'";
+/// <reference types="cypress" />
 
-  it("Query the books with NOT_ON_STORE status", () => {
-    cy.task("sqlQuery", SQL_NOT_ON_STORE_STATUS).then((resolvedValue: any) => {
-      resolvedValue["rows"].forEach((item: any) => {
-        console.log("result==>" + item);
-      });
+describe('Visit URL and log result', () => {
+  it('should log the result of the request', () => {
+    cy.request('http://localhost:5001/students').then((response) => {
+      // Print the response status and body in the Cypress Test Runner
+      cy.log(`Response Status: ${response.status}`);
+      cy.log(`Response Body: ${JSON.stringify(response.body)}`);
+      cy.wait(10000);
     });
   });
 });

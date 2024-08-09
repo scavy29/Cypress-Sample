@@ -2,10 +2,9 @@
     "nodeVersion": "system",
     "env": {
       "db": {
-          "user": "update to your user",
-          "password": "update to your password",
-          "connectString" : "update to your connect string"
-
+          "user": "<system>",
+          "password": "<password>",
+          "connectString" : "<connectString>"
       }
     }
   }
